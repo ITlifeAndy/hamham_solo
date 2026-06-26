@@ -1,0 +1,38 @@
+{
+  "manifest_version": 3,
+  "name": "HamHam",
+  "version": "1.0.0",
+  "description": "Collaborative Bookmark Management",
+  "icons": {
+    "16": "icon16.png",
+    "48": "icon48.png",
+    "128": "icon128.png"
+  },
+  "permissions": [
+    "bookmarks",
+    "storage",
+    "alarms",
+    "tabs",
+    "identity",
+    "unlimitedStorage"
+  ],
+  "background": {
+    "service_worker": "background.js",
+    "type": "module"
+  },
+  "chrome_url_overrides": {
+
+    "newtab": "index.html"
+  },
+   "action": {
+     "default_title": "HamHam",
+     "default_icon": {
+       "16": "icon16.png",
+       "48": "icon48.png",
+       "128": "icon128.png"
+     }
+   },
+  "content_security_policy": {
+    "extension_pages": "script-src 'self'; object-src 'self'"
+  }
+}

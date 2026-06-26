@@ -1,0 +1,8 @@
+{
+  "scripts": {
+    "build": "npm run build --prefix src/extension"
+  },
+  "dependencies": {
+    "react-colorful": "^5.6.1"
+  }
+}
